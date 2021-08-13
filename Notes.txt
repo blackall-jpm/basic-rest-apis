@@ -1,0 +1,27 @@
+Notes
+This was created on WSL Ubunto for Windows 10
+jpmb@JB-HP-LAPTOP:~/KrakenAPI$ lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 20.04.2 LTS
+Release:        20.04
+Codename:       focal
+
+
+The tar file was created via ...
+tar -cvf KrakenRESTAPI.tar ./Kraken_PublicAPI/
+
+To untar ...
+tar -xvf ./KrakenRESTAPI.tar
+
+You should see something like this ...
+jpmb@JB-HP-LAPTOP:~/tmp$ tar -xvf ./KrakenRESTAPI.tar
+./Kraken_PublicAPI/
+./Kraken_PublicAPI/kraken_publicapi.py
+./Kraken_PublicAPI/SmokeTests.sh
+
+To Run ..
+cd Kraken_PublicAPI/
+./SmokeTests.sh
+
+This is a *very* basic test of each of the public endpoints. The output echoed out to a results.out file.
